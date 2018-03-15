@@ -231,7 +231,7 @@ var HeatMapComponent = /** @class */ (function () {
         var selection = __WEBPACK_IMPORTED_MODULE_1_d3__["b" /* select */]("#heatmap");
         var svgSelection = selection.append("svg")
             .attr("width", 1500)
-            .attr("height", 700)
+            .attr("height", 775)
             .attr("style", "outline:thick solid black;");
         var mouseOverDiv = __WEBPACK_IMPORTED_MODULE_1_d3__["b" /* select */](".mouseOverContent");
         var rectangles = svgSelection.selectAll("rect")
@@ -242,7 +242,7 @@ var HeatMapComponent = /** @class */ (function () {
             return 10 + d.properties.X * 15;
         })
             .attr("y", function (d) {
-            return 20 + d.properties.Y * 10;
+            return 20 + d.properties.Y * 7.5;
         })
             .attr("width", 13)
             .attr("height", 6)

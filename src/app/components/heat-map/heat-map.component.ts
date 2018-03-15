@@ -39,7 +39,7 @@ export class HeatMapComponent implements OnInit,OnChanges {
     let selection = d3.select("#heatmap");
     let svgSelection = selection.append("svg")
                         .attr("width",1500)
-                        .attr("height",700)
+                        .attr("height",775)
                         .attr("style","outline:thick solid black;");
                             
     let mouseOverDiv = d3.select(".mouseOverContent");
@@ -52,7 +52,7 @@ export class HeatMapComponent implements OnInit,OnChanges {
                                         return 10+d.properties.X*15;
                                       })
                                       .attr("y",function(d){
-                                        return 20+d.properties.Y*10;
+                                        return 20+d.properties.Y*7.5;
                                       })
                                       .attr("width",13)
                                       .attr("height",6)                                      
